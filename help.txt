@@ -1,0 +1,43 @@
+kline:
+[
+  [
+0    1499040000000,      // Время открытия
+1    "0.01634790",       // Цена открытия (Open)
+2    "0.80000000",       // Максимальная цена (High)
+3    "0.01575800",       // Минимальная цена (Low)
+4    "0.01577100",       // Цена закрытия (Close)
+5    "148976.11427815",  // Объем
+6    1499644799999,      // Время закрытия
+7    "2434.19055334",    // Объем квотируемой валюты
+8    308,                // Кол-во сделок
+9    "1756.87402397",    // Taker buy base asset volume
+10    "28.46694368",      // Taker buy quote asset volume
+11    "17928899.62484339" // Ignore
+  ]
+]
+
+Kline websocket message format
+{
+    "e": "kline",                                   # event type
+    "E": 1499404907056,                             # event time
+    "s": "ETHBTC",                                  # symbol
+    "k": {
+        "t": 1499404860000,                 # start time of this bar
+        "T": 1499404919999,                 # end time of this bar
+        "s": "ETHBTC",                              # symbol
+        "i": "1m",                                  # interval
+        "f": 77462,                                 # first trade id
+        "L": 77465,                                 # last trade id
+        "o": "0.10278577",                  # open
+        "c": "0.10278645",                  # close
+        "h": "0.10278712",                  # high
+        "l": "0.10278518",                  # low
+        "v": "17.47929838",                 # volume
+        "n": 4,                                             # number of trades
+        "x": false,                                 # whether this bar is final
+        "q": "1.79662878",                  # quote volume
+        "V": "2.34879839",                  # volume of active buy
+        "Q": "0.24142166",                  # quote volume of active buy
+        "B": "13279784.01349473"    # can be ignored
+        }
+}
