@@ -1,0 +1,75 @@
+/Users/yuriykhen/Projects/Binance/bin/python /Users/yuriykhen/Projects/Binance/Trade_project/trades.py
+
+Sar: 53285.1, Open: 53032.65
+server_time: 2021-03-26 16:00:31.256000
+local_time: 2021-03-26 16:00:31.406629
+Not yet!
+
+Sar: 53177.0, Open: 52775.45
+server_time: 2021-03-26 16:30:30.667000
+local_time: 2021-03-26 16:30:30.810935
+Not yet!
+
+Sar: 52707.396, Open: 53324.91
+server_time: 2021-03-26 17:00:32.083000
+local_time: 2021-03-26 17:00:32.232273
+Buy!
+0.0018694691754444475
+New Order done
+
+Sar: 52775.45, Open: 53270.19
+server_time: 2021-03-26 17:30:31.182000
+local_time: 2021-03-26 17:30:31.330156
+Not yet!
+
+Sar: 52919.96, Open: 53406.92
+server_time: 2021-03-26 18:00:31.222000
+local_time: 2021-03-26 18:00:31.375004
+Not yet!
+
+Sar: 53047.276, Open: 53327.28
+server_time: 2021-03-26 18:30:31.158000
+local_time: 2021-03-26 18:30:31.308925
+Not yet!
+
+Sar: 53149.1288, Open: 53328.22
+server_time: 2021-03-26 19:00:31.338000
+local_time: 2021-03-26 19:00:31.491730
+Not yet!
+
+Sar: 53750.0, Open: 53711.19
+server_time: 2021-03-26 19:30:30.671000
+local_time: 2021-03-26 19:30:30.826473
+Sell!
+
+Sar: 52893.95, Open: 53792.34
+server_time: 2021-03-26 20:00:30.873000
+local_time: 2021-03-26 20:00:31.031563
+Buy!
+0.0018589430310177657
+New Order done
+
+Sar: 53127.159999999996, Open: 53674.9
+server_time: 2021-03-26 20:30:31.230000
+local_time: 2021-03-26 20:30:31.386783
+Not yet!
+
+Sar: 53313.727999999996, Open: 53813.89
+server_time: 2021-03-26 21:00:31.366000
+local_time: 2021-03-26 21:00:31.528371
+Not yet!
+
+Sar: 53444.67, Open: 53677.94
+server_time: 2021-03-26 21:30:31.258000
+local_time: 2021-03-26 21:30:31.417529
+Not yet!
+
+Sar: 53444.67, Open: 53679.67
+server_time: 2021-03-26 22:00:31.223000
+local_time: 2021-03-26 22:00:31.391537
+Not yet!
+
+Sar: 53477.1, Open: 53647.87
+server_time: 2021-03-26 22:30:31.258000
+local_time: 2021-03-26 22:30:31.429544
+Not yet!
