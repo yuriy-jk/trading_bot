@@ -1,0 +1,26 @@
+ONEUSDT
+Csv file done
+30MINUTE
+Best_order: (0.002, 0.1) - Best_Res: 548.1838729276676
+Csv file done
+1HOUR
+Best_order: (0.004, 0.1) - Best_Res: 558.0849762387148
+Csv file done
+4HOUR
+Best_order: (0.008, 0.1) - Best_Res: 504.0699126092384
+
+XRP
+30MINUTE
+Best_order: (0.008, 0.1) - Best_Res: 430.8270742410632
+1HOUR
+Best_order: (0.03, 0.1) - Best_Res: 444.35242318388356
+4HOUR
+Best_order: (0.2, 0.17999999999999997) - Best_Res: 439.87657521795546
+
+BTC
+30MINUTE
+Best_order: (0.006, 0.1) - Best_Res: 308.2807110707281
+1HOUR
+Best_order: (0.003, 0.1) - Best_Res: 308.65090455411564
+4HOUR
+Best_order: (0.03, 0.1) - Best_Res: 302.5181541777465

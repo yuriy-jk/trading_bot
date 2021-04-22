@@ -15,7 +15,7 @@ volume = []
 
 
 def indic_array(tiker):
-    for kline in client.futures_klines(symbol=tiker, interval=client.KLINE_INTERVAL_1HOUR, limit=25):
+    for kline in client.futures_klines(symbol=tiker, interval=client.KLINE_INTERVAL_1HOUR, limit=144):
     #for kline in client.futures_klines(symbol=tiker, interval=client.KLINE_INTERVAL_30MINUTE, limit=72):
         open.append(float(kline[1]))
         high.append(float(kline[2]))
@@ -53,6 +53,15 @@ def allert_sell(tiker, period) -> object:
         print('Sar: {}, Open: {}'.format(sar[-1], open[-1]))
         #print('High: {}, Low: {}'.format(high[-1], low[-1]))
 
+
+def side_signal(tiker, period):
+    indic_array(tiker)
+    a, b = period
+    sar = SAR(np.array(high), np.array(low), acceleration=a, maximum=b)
+    if sar[-1] < open[-1]:
+        return 'Waiting_short'
+    if sar[-1] > open[-1]:
+        return 'Waiting_long'
 
 
 # sar = allert_buy('BTCUSDT', (21,14))

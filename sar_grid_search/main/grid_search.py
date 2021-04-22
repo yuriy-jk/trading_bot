@@ -1,10 +1,13 @@
-from binance.client import Client
 import csv
-from api_data import api, secret
+import os
+from pathlib import Path
+from datetime import datetime as dt
 import numpy as np
 import pandas as pd
+from binance.client import Client
 from talib._ta_lib import *
 
+from api_data import api, secret
 
 client = Client(api, secret)
 
@@ -25,16 +28,19 @@ def f_klines_to_csv(tiker, timeframe):
         for kline in client.futures_klines(symbol=tiker, interval=client.KLINE_INTERVAL_4HOUR, limit=180):
             data.append(kline)
             # write kline data to csv for analyse
-    with open(tiker + timeframe + '1m' + '.csv', 'w', newline='') as csvfile:
+    now = dt.now().date()
+    path = Path(str(now) + tiker + '/')
+    path.mkdir()
+    file_name = tiker + timeframe + '1m' + '.csv'
+    file_path = os.path.join(path, file_name)
+    with open(file_path, 'w', newline='') as csvfile:
         fieldnames = ['time', 'open', 'high', 'low', 'close', 'vol']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for i in data:
             writer.writerow({'time': i[0], 'open': i[1], 'high': i[2], 'low': i[3], 'close': i[4],
                             'vol': i[5]})
-    csv_name = tiker + timeframe + '1m' + '.csv'
-    # print('Csv file done')
-    return csv_name
+    return str(file_path)
 
 
 def Indicators_sar_test(df, indics):
@@ -153,11 +159,7 @@ def grid_search(csv_data):
     return print('Best_order: {} - Best_Res: {}'.format(best_order, best_res))
 
 
-time_frame = ['30MINUTE', '1HOUR', '4HOUR']
-for i in time_frame:
-    csv_data = f_klines_to_csv('ONEUSDT', i)
-    print(i)
-    grid_search(csv_data)
+
 
 
 
