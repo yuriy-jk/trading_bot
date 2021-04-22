@@ -29,9 +29,12 @@ def f_klines_to_csv(tiker, timeframe):
             data.append(kline)
             # write kline data to csv for analyse
     now = dt.now().date()
-    path = Path(str(now) + tiker + '/')
-    path.mkdir()
     file_name = tiker + timeframe + '1m' + '.csv'
+    path = Path(str(now) + tiker + '/')
+    if os.path.exists(path):
+        pass
+    else:
+        path.mkdir()
     file_path = os.path.join(path, file_name)
     with open(file_path, 'w', newline='') as csvfile:
         fieldnames = ['time', 'open', 'high', 'low', 'close', 'vol']
