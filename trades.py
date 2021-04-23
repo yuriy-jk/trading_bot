@@ -1,6 +1,6 @@
-from Trade_project.main.candle_monitor import buy_signal, sell_signal
-from Trade_project.main.Allert import side_signal
-from Trade_project.main.functions import *
+from main.candle_monitor import buy_signal, sell_signal
+from main.Allert import side_signal
+from main.functions import *
 
 from api_data import api, secret
 from binance.client import Client
