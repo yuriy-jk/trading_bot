@@ -143,7 +143,7 @@ def grid_search(csv_data):
     b = list(np.arange(0.01, 0.1, 0.01))
     c = [0.1, 0.2]
     order_acc = a + b + c
-    order_max = np.arange(0.1, 0.2, 0.01)
+    order_max = np.arange(0.01, 0.1, 0.01)
     best_res = 0
     best_order = ()
     for a in order_acc:
